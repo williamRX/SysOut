@@ -1,19 +1,39 @@
 SysOut Project
+Table of Contents
 Description
-SysOut est un projet basé sur React, TypeScript et Vite. Il fournit une configuration minimale pour faire fonctionner React avec HMR (Hot Module Replacement) et quelques règles ESLint.
-
-Structure du projet
-Le projet est structuré comme suit :
-
-backend/ : Contient le code du serveur backend, y compris les contrôleurs, les modèles et les routes.
-runners/ : Contient les scripts pour exécuter MongoDB et React.
-SysOut/ : Contient le code de l'application frontend, y compris les composants, les styles et la configuration de Vite.
+Project Structure
 Backend
-Le backend est une application Express qui utilise MongoDB comme base de données. Il utilise également des sockets pour la communication en temps réel.
+Frontend
+How to Run the Project
+ESLint Configuration
+Contribution
+License
+Description
+SysOut is a project based on React, TypeScript, and Vite. It provides a minimal configuration for running React with HMR (Hot Module Replacement) and some ESLint rules.
+
+Project Structure
+The project is structured as follows:
+
+backend/: Contains the backend server code, including controllers, models, and routes.
+runners/: Contains scripts for running MongoDB and React.
+SysOut/: Contains the frontend application code, including components, styles, and Vite configuration.
+Backend
+The backend is an Express application that uses MongoDB as a database. It also uses sockets for real-time communication.
 
 Frontend
-Le frontend est une application React qui utilise TypeScript pour le typage statique. Il utilise également Vite pour un rechargement rapide des modules.
+The frontend is a React application that uses TypeScript for static typing. It also uses Vite for fast module reloading.
 
-Comment exécuter le projet
-Pour exécuter le projet, vous devez d'abord démarrer le backend en exécutant le script runMongo.sh dans le dossier runners/. Ensuite, vous pouvez démarrer l'application frontend en exécutant le script runReact.sh dans le même dossier.
+How to Run the Project
+To run the project, you first need to start the backend by running the runMongo.sh script in the runners/ directory. Then, you can start the frontend application by running the runReact.sh script in the same directory.
+
+ESLint Configuration
+If you are developing a production application, we recommend updating the configuration to enable type lint rules:
+
+Replace plugin:@typescript-eslint/recommended with plugin:@typescript-eslint/recommended-type-checked or plugin:@typescript-eslint/strict-type-checked. Optionally add plugin:@typescript-eslint/stylistic-type-checked. Install eslint-plugin-react and add plugin:react/recommended & plugin:react/jsx-runtime to the extends list.
+
+Contribution
+If you want to contribute to this project, please follow the contribution guidelines provided in the CONTRIBUTING.md file.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
