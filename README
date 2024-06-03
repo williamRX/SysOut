@@ -1,0 +1,19 @@
+SysOut Project
+Description
+SysOut est un projet basé sur React, TypeScript et Vite. Il fournit une configuration minimale pour faire fonctionner React avec HMR (Hot Module Replacement) et quelques règles ESLint.
+
+Structure du projet
+Le projet est structuré comme suit :
+
+backend/ : Contient le code du serveur backend, y compris les contrôleurs, les modèles et les routes.
+runners/ : Contient les scripts pour exécuter MongoDB et React.
+SysOut/ : Contient le code de l'application frontend, y compris les composants, les styles et la configuration de Vite.
+Backend
+Le backend est une application Express qui utilise MongoDB comme base de données. Il utilise également des sockets pour la communication en temps réel.
+
+Frontend
+Le frontend est une application React qui utilise TypeScript pour le typage statique. Il utilise également Vite pour un rechargement rapide des modules.
+
+Comment exécuter le projet
+Pour exécuter le projet, vous devez d'abord démarrer le backend en exécutant le script runMongo.sh dans le dossier runners/. Ensuite, vous pouvez démarrer l'application frontend en exécutant le script runReact.sh dans le même dossier.
+
